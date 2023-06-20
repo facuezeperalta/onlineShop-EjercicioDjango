@@ -1,3 +1,119 @@
-body{
-    background-color: lightblue;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap');
+:root{
+    --text-color: black;
+    --green-color: #5BD9CC;
+    --darker-green: #088C7F;
+    --white-text-color: whitesmoke;
+    --gray-color: gray;
+    --darkgray-color: #5D6266;
 }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color:whitesmoke ;
+}
+.base-header{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid gray;
+    padding: 1rem ;
+}
+
+.base-header-element{
+    font-family: 'Lexend', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+.test-tile{
+    font-family: 'lexend', sans-serif;
+    font-weight: bold;
+    color: gray;
+    margin-top: 2rem;
+}
+
+.base-new-item{
+    text-decoration: none;
+    font-family: 'lexend', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 0.9rem;
+    padding: .9rem;
+}
+
+
+.button-01{
+    padding: 0.3rem 0.6rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: var(--green-color);
+    color:var(--white-text-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: 'lexend', sans-serif;
+    margin-right: 1rem;
+}
+.button-01:hover{
+    background-color: var(--darker-green);
+}
+
+.button-02{
+    padding: 0.3rem 0.6rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: var(--gray-color);
+    color:var(--white-text-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: 'lexend', sans-serif;
+}
+
+.button-02:hover{
+    background-color: darkgray;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: var(--darker-green);
+    padding: 20px 20px;
+}
+
+footer h3{
+    color: var(--white-text-color);
+}
+footer p{
+    color: var(--white-text-color);  
+}
+
+footer a{
+    color: var(--white-text-color);
+    text-decoration: none;
+}
+
+footer li{
+    list-style: none;
+}
+
+.footer-div{
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+

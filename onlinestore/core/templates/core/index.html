@@ -1,14 +1,18 @@
+{% extends 'core/base.html' %}
+
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 01</title>
-    <link rel="stylesheet" href="{% static 'core/css/estilo.css'  %}">
-</head>
-<body>
-    <div>
-        <h1 class='testTitle'>Test 01</h1>
-    </div>
-</body>
-</html>
+
+
+{%block title %} Welcome {% endblock %}
+
+
+
+
+
+{%block content%}
+    <h1 class='test-tile'>The front Page</h1>
+{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "core/css/estilo.css" %}"> {% comment %} importo mi propio CSS file {% endcomment %}
+{% endblock %}
