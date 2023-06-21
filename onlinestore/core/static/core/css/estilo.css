@@ -6,6 +6,7 @@
     --white-text-color: whitesmoke;
     --gray-color: gray;
     --darkgray-color: #5D6266;
+    --ligth-gray: #D9D8D7;
 }
 
 *{
@@ -109,11 +110,28 @@ footer li{
 
 .footer-div{
     display: grid;
-    grid-template-rows: 50px 50px;
-    grid-auto-columns: 100px;
-    grid-auto-flow: column;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.newest-item-grid{
+    margin-top: 6px;
+    padding: 12px 6px;
+    border-radius: 5px;
+    background-color: var(--ligth-gray);
+}
+
+.newest-item-grid h2{
+    margin-bottom: 12px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Lexend',sans-serif;
+    font-weight: bolder;
+    place-content: center;
+}
+
+.footer-left{
+    justify-self: end;
 }
 
 
