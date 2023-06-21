@@ -10,8 +10,8 @@ def index(request):
     categories = Category.objects.all()
 
     return render(request,'core/index.html',{
-        categories: 'categories',
-        items: 'items',
+        'categories': categories,
+        'items': items,
     })
 
 def contact(request):
