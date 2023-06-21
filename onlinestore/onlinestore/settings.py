@@ -120,6 +120,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+MEDIA_URL = 'media/'
+
+MEDIA_ROOT = BASE_DIR / 'media' #creará una capreta media en el root folder del proyecto.
 
 
 # Default primary key field type
